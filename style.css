@@ -83,6 +83,9 @@ img {
   color: #000000;
   width: 50%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
 }
 
 .portfolio__link:hover,
@@ -90,4 +93,18 @@ img {
 .portfolio__link:focus {
   cursor: pointer;
   opacity: 0.6;
+}
+
+@media (max-width: 599px) {
+  .portfolio__item {
+    width: calc(50% - 20px);
+  }
+
+  .portfolio__item-caption {
+    font-size: 1.2em;
+  }
+
+  .portfolio__link {
+    font-size: 17px;
+  }
 }
