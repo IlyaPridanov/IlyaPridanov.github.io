@@ -11,7 +11,7 @@ body {
   line-height: 28px;
   font-weight: normal;
   font-style: normal;
-  background-color: #ffffff;
+  background-color: #B0E0E6;
   height: 100%;
 }
 
@@ -28,12 +28,13 @@ img {
 
 .portfolio {
   margin: 0 auto;
+  padding: 0 10px;
   width: 100%;
   max-width: 1440px;
 }
 
 .portfolio__caption {
-  margin: 0;
+  margin: 20px 0;
   text-align: center;
 }
 
@@ -43,16 +44,33 @@ img {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .portfolio__item {
-  width: 33.3%;
+  margin: 10px;
+  padding: 5px;
+  width: calc(33.3% - 20px);
+  border-radius: 5px;
+  background-color: #F5F5F5;
 }
 
+.portfolio__item:hover {
+  background-color: #F0F8FF;
+}
+
+/* .portfolio__item:nth-child(2n) {
+  margin: 10px;
+} */
+
 .portfolio__item-caption {
-  margin: 0;
+  margin: 5px 0 10px 0;
   text-align: center;
 }
+
+/* .portfolio__img {
+  border-radius: 5px;
+} */
 
 .portfolio__row {
   display: flex;
