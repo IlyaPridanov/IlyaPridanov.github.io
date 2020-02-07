@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-left" viewBox="0 0 21 36">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.27747 18.1085L20.7919 32.2046L17.1532 36L1.56412e-06 18.1085L17.3613 -3.18108e-07L21 3.79535L7.27747 18.1085Z"/>
+</symbol><symbol id="icon-arrow" viewBox="0 0 16 16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L6.6 1.4L12.2 7H0V9H12.2L6.6 14.6L8 16L16 8L8 0Z"/>
+</symbol><symbol id="icon-comment" viewBox="0 0 18 16">
+<path d="M9 13C13.4183 13 17 10.3137 17 7C17 3.68629 13.4183 1 9 1C4.58172 1 1 3.68629 1 7C1 9.23638 2.63138 11.187 5.05029 12.2189C5.10723 13.6066 4.56657 14.9449 3.28571 14.9449C4.27569 15.1239 6.68061 14.9618 8.70284 12.9959C8.80145 12.9986 8.90051 13 9 13Z" stroke="white" stroke-opacity="0.4"/>
+</symbol><symbol id="icon-eay" viewBox="0 0 24 16">
+<path d="M12 7.46154C12.3197 7.46154 12.5789 7.22046 12.5789 6.92308C12.5789 6.62569 12.3197 6.38462 12 6.38462C11.6803 6.38462 11.4211 6.62569 11.4211 6.92308C11.4211 7.22046 11.6803 7.46154 12 7.46154Z" stroke="white" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 12.8462C14.8777 12.8462 17.2105 10.6765 17.2105 8C17.2105 5.32354 14.8777 3.15385 12 3.15385C9.12231 3.15385 6.78947 5.32354 6.78947 8C6.78947 10.6765 9.12231 12.8462 12 12.8462Z" stroke="white" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 8C1 8 4.92857 1 12 1C19.0714 1 23 8 23 8C23 8 19.0714 15 12 15C4.92857 15 1 8 1 8Z" stroke="white" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol><symbol id="icon-flag" viewBox="0 0 14 18">
+<path d="M1 1H13V16L7 11.1351L1 16V1Z" stroke="#FF7931" stroke-width="1.5"/>
+</symbol><symbol id="icon-flag2" viewBox="0 0 14 18">
+<path d="M1 1H13V16L7 11.1351L1 16V1Z" stroke="#FF7931" stroke-width="1.5"/>
+</symbol><symbol id="icon-rectangle-grey" viewBox="0 0 13 13">
+<path d="M-7.39653e-06 6.33009L6.38905 -1.73564e-05L6.36184 5.87037L6.3301 12.7191L-7.39653e-06 6.33009Z" fill="#A8A8A8"/>
+</symbol><symbol id="icon-triangle" viewBox="0 0 20 20">
+<path d="M0.707088 9.67107L9.25223 1.20477L9.21627 8.96335L9.17339 18.2162L0.707088 9.67107Z" stroke="white"/>
+</symbol></svg>
