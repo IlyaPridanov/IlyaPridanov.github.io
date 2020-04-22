@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.">
+    <title>tui</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body><div style="display:none"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-left" viewBox="0 0 21 36">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.27747 18.1085L20.7919 32.2046L17.1532 36L1.56412e-06 18.1085L17.3613 -3.18108e-07L21 3.79535L7.27747 18.1085Z"></path>
+</symbol><symbol id="icon-close" viewBox="0 0 18 18">
+    <polygon points="18,1.3 16.7,0 9,7.7 1.3,0 0,1.3 7.7,9 0,16.7 1.3,18 9,10.3 16.7,18 18,16.7 10.3,9 "></polygon>
+</symbol><symbol id="icon-fb" viewBox="0 0 19 30">
+<path d="M11.736 30H6.37522C5.4798 30 4.7514 29.3472 4.7514 28.5448V17.7086H1.62381C0.728392 17.7086 0 17.0556 0 16.2534V11.61C0 10.8076 0.728392 10.1548 1.62381 10.1548H4.7514V7.82959C4.7514 5.52406 5.55923 3.56255 7.08727 2.15744C8.6222 0.745926 10.7673 0 13.2906 0L17.379 0.0059509C18.2729 0.00732422 19 0.660095 19 1.46118V5.7724C19 6.57486 18.2719 7.22763 17.3767 7.22763L14.624 7.22855C13.7845 7.22855 13.5708 7.37938 13.5251 7.42561C13.4497 7.50229 13.3601 7.71904 13.3601 8.31757V10.1546H17.1698C17.4566 10.1546 17.7345 10.218 17.9733 10.3374C18.4884 10.5954 18.8087 11.0831 18.8087 11.6103L18.8067 16.2536C18.8067 17.0556 18.0783 17.7084 17.1828 17.7084H13.3601V28.5448C13.3601 29.3472 12.6314 30 11.736 30ZM6.71387 28.2413H11.3973V16.9212C11.3973 16.3854 11.8839 15.9496 12.4815 15.9496H16.8442L16.846 11.9135H12.4812C11.8836 11.9135 11.3973 11.4777 11.3973 10.9419V8.31757C11.3973 7.63046 11.4752 6.84906 12.054 6.26175C12.7532 5.55176 13.8553 5.46982 14.6235 5.46982L17.0375 5.4689V1.76422L13.2891 1.75873C9.23388 1.75873 6.71387 4.08508 6.71387 7.82959V10.9419C6.71387 11.4775 6.2276 11.9135 5.62997 11.9135H1.96247V15.9496H5.62997C6.2276 15.9496 6.71387 16.3854 6.71387 16.9212V28.2413ZM17.3752 1.76468H17.3754H17.3752Z"></path>
+</symbol><symbol id="icon-insta" viewBox="0 0 24 24">
+<path d="M23.939 7.05609C23.8828 5.78087 23.6765 4.90417 23.381 4.1445C23.0762 3.33813 22.6073 2.61618 21.9929 2.01602C21.3927 1.40653 20.6658 0.932924 19.8686 0.632938C19.1044 0.33753 18.2321 0.131313 16.9567 0.0750881C15.6717 0.0141019 15.2638 0 12.0047 0C8.74559 0 8.33766 0.0141019 7.05743 0.0703264C5.78197 0.126551 4.90511 0.332952 4.14547 0.628176C3.33876 0.932924 2.61668 1.40177 2.01641 2.01602C1.4068 2.61618 0.933285 3.34289 0.633059 4.13992C0.337595 4.90417 0.131338 5.77611 0.0751024 7.05133C0.0141046 8.33607 0 8.74392 0 12.0024C0 15.2608 0.0141046 15.6687 0.0703399 16.9487C0.126575 18.2239 0.333015 19.1006 0.628479 19.8603C0.933285 20.6666 1.4068 21.3886 2.01641 21.9887C2.61668 22.5982 3.34353 23.0718 4.14071 23.3718C4.90511 23.6672 5.77721 23.8734 7.05285 23.9297C8.33289 23.9861 8.74101 24 12.0001 24C15.2592 24 15.6671 23.9861 16.9473 23.9297C18.2228 23.8734 19.0997 23.6672 19.8593 23.3718C21.4725 22.7482 22.748 21.473 23.3717 19.8603C23.667 19.096 23.8734 18.2239 23.9297 16.9487C23.9859 15.6687 24 15.2608 24 12.0024C24 8.74392 23.9952 8.33607 23.939 7.05609ZM21.7773 16.8549C21.7257 18.027 21.5288 18.66 21.3646 19.0819C20.9613 20.1275 20.1313 20.9573 19.0856 21.3606C18.6635 21.5247 18.0259 21.7215 16.8581 21.773C15.592 21.8294 15.2123 21.8433 12.0094 21.8433C8.80659 21.8433 8.4221 21.8294 7.16056 21.773C5.98823 21.7215 5.35517 21.5247 4.93313 21.3606C4.41273 21.1683 3.93903 20.8635 3.55454 20.465C3.15595 20.0758 2.85115 19.607 2.65881 19.0867C2.49468 18.6647 2.29777 18.027 2.2463 16.8597C2.18988 15.5938 2.17596 15.214 2.17596 12.0117C2.17596 8.80949 2.18988 8.42507 2.2463 7.16396C2.29777 5.99185 2.49468 5.35891 2.65881 4.93695C2.85115 4.41646 3.15595 3.94304 3.55931 3.55844C3.94837 3.15993 4.41731 2.85518 4.9379 2.66306C5.35993 2.49897 5.99776 2.30209 7.16532 2.25045C8.43144 2.19422 8.81135 2.18012 12.014 2.18012C15.2216 2.18012 15.6013 2.19422 16.8629 2.25045C18.0352 2.30209 18.6683 2.49897 19.0903 2.66306C19.6107 2.85518 20.0844 3.15993 20.4689 3.55844C20.8675 3.94762 21.1723 4.41646 21.3646 4.93695C21.5288 5.35891 21.7257 5.99643 21.7773 7.16396C21.8336 8.42983 21.8477 8.80949 21.8477 12.0117C21.8477 15.214 21.8336 15.589 21.7773 16.8549Z"></path>
+<path d="M12.0047 5.83716C8.60032 5.83716 5.8382 8.59857 5.8382 12.0024C5.8382 15.4063 8.60032 18.1677 12.0047 18.1677C15.4092 18.1677 18.1711 15.4063 18.1711 12.0024C18.1711 8.59857 15.4092 5.83716 12.0047 5.83716ZM12.0047 16.0017C9.79609 16.0017 8.00463 14.2108 8.00463 12.0024C8.00463 9.79412 9.79609 8.00318 12.0047 8.00318C14.2134 8.00318 16.0047 9.79412 16.0047 12.0024C16.0047 14.2108 14.2134 16.0017 12.0047 16.0017Z"></path>
+<path d="M19.8547 5.59312C19.8547 6.38796 19.2101 7.03243 18.415 7.03243C17.62 7.03243 16.9754 6.38796 16.9754 5.59312C16.9754 4.7981 17.62 4.15381 18.415 4.15381C19.2101 4.15381 19.8547 4.7981 19.8547 5.59312Z"></path>
+</symbol><symbol id="icon-left" viewBox="0 0 9 17">
+<path d="M8.69856 1.02751C8.52393 0.852881 8.28496 0.760969 8.05518 0.760969C7.8254 0.760969 7.58643 0.852882 7.4118 1.02751L0.582755 7.85656C0.408123 8.03119 0.316209 8.26097 0.316209 8.49994C0.316209 8.73891 0.408123 8.96869 0.582755 9.14332L7.4118 15.9724C7.77026 16.3308 8.34011 16.3308 8.69857 15.9724C9.05702 15.6139 9.05702 15.0441 8.69857 14.6856L2.5129 8.49994L8.69856 2.31428C9.04783 1.95582 9.04783 1.37678 8.69856 1.02751Z" fill="#73BB4F"></path>
+</symbol><symbol id="icon-logo" viewBox="0 0 15 25">
+<path d="M12.5989 0C12.5989 0 10.9714 1.99559 9.21134 2.80015C-3.82263 8.75867 1.67435 20.3702 1.85368 20.4084C1.85368 20.4084 2.58456 18.7998 3.57187 17.8822C9.83693 12.0611 11.1103 5.36067 11.1103 5.36067C11.1103 5.36067 9.70441 13.4234 4.1307 18.4403C2.89968 19.5477 2.06612 22.2746 1.71327 25C1.71327 25 2.58589 24.5544 2.96113 24.4337C3.10745 23.2268 3.41338 22.0712 3.9306 21.0389C11.7205 22.2111 14.2719 14.2777 14.6052 11.5113C15.3918 4.97786 12.5989 0 12.5989 0Z" fill="white"></path>
+</symbol><symbol id="icon-main-plus" viewBox="0 0 30 30">
+<path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z" fill="#73B055"></path>
+<path d="M15 7.8V22.8" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M22.5 15H7.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol><symbol id="icon-vk" viewBox="0 0 34 22">
+<path d="M16.6562 21.3709H18.5683C18.8895 21.3285 19.1922 21.1765 19.4372 20.9344C19.6119 20.6546 19.7035 20.3177 19.6986 19.9736C19.6986 19.9736 19.6603 17.0472 20.8479 16.6082C22.0356 16.1693 23.5185 19.4444 25.1098 20.6978C25.7115 21.2421 26.4709 21.5036 27.2343 21.4294L31.4834 21.3612C31.4834 21.3612 33.7099 21.2026 32.654 19.1932C31.8168 17.595 30.7468 16.1738 29.4905 14.9914C26.8221 12.1479 27.179 12.6088 30.3935 7.69007C32.3523 4.69541 33.1341 2.86642 32.8898 2.08117C32.6455 1.29593 31.2157 1.53248 31.2157 1.53248L26.4248 1.56662C26.2126 1.53728 25.9975 1.58056 25.8066 1.69099C25.6239 1.84447 25.4778 2.04825 25.3817 2.28358C24.8854 3.7611 24.2939 5.19419 23.612 6.57073C21.4768 10.7311 20.6249 10.9603 20.2743 10.6921C19.4649 10.0897 19.6667 8.27291 19.6667 6.98286C19.6667 2.95177 20.2 1.27154 18.6299 0.837463C17.8974 0.639627 17.1447 0.557551 16.3928 0.593597C15.0539 0.451088 13.7036 0.610134 12.4178 1.06182C11.8718 1.36665 11.4511 2.03728 11.7082 2.08849C12.2526 2.14435 12.7579 2.43653 13.121 2.90544C13.455 3.67819 13.6191 4.53301 13.599 5.3953C13.599 5.3953 13.8816 10.1385 12.9404 10.7286C12.3031 11.1334 11.4086 10.3067 9.50718 6.53415C8.86477 5.22178 8.29699 3.86307 7.80755 2.46648C7.71958 2.22894 7.58421 2.01846 7.41239 1.85194C7.18905 1.68261 6.93835 1.56654 6.67518 1.51053L2.10318 1.54467C2.10318 1.54467 1.41908 1.56662 1.16839 1.90803C0.945312 2.21286 1.15139 2.8396 1.15139 2.8396C3.07801 8.02455 5.63675 12.869 8.75085 17.2276C10.7741 19.8034 13.6354 21.3039 16.6562 21.3733V21.3709Z" fill="#F1F8ED"></path>
+<path d="M26.969 21.9976C26.0973 21.9659 25.2515 21.6504 24.53 21.088C23.779 20.4727 23.0956 19.7555 22.4947 18.9518C22.075 18.3579 21.5785 17.8413 21.0224 17.4203C20.8449 18.0505 20.7546 18.7088 20.7547 19.3712C20.7704 20.0261 20.5657 20.6628 20.1832 21.149C19.763 21.582 19.2327 21.8487 18.6705 21.9099H16.682C13.4231 21.8717 10.3084 20.3621 8.01174 17.7081C4.81604 13.5734 2.17783 8.91268 0.184953 3.8809C-0.119519 3.1663 -0.0437664 2.31521 0.38041 1.68612C0.844223 1.20098 1.4527 0.939052 2.08004 0.954522L6.65416 0.922819C7.13198 0.976089 7.59201 1.1583 7.99687 1.45445C8.33268 1.73443 8.59798 2.11136 8.76595 2.54696C9.24145 3.80668 9.78938 5.02867 10.4061 6.20494C10.9759 7.3902 11.6756 8.48675 12.4881 9.46785C12.5922 8.26522 12.6085 7.05466 12.537 5.84889C12.5592 5.2829 12.4721 4.71835 12.2821 4.19549C12.079 4.01099 11.8311 3.90361 11.5725 3.88822L10.7758 3.7736L10.5782 2.79814C10.4465 1.80317 11.3366 0.949644 11.9697 0.603356C13.4006 0.0883432 14.9055 -0.0997378 16.3994 0.049782C17.2254 0.0189178 18.0514 0.109072 18.8575 0.318034C20.9332 0.856976 20.8567 2.88837 20.7696 5.03926C20.7462 5.67331 20.7186 6.40491 20.7186 7.25356V7.90468C20.6992 8.35499 20.7048 8.80622 20.7356 9.25569C21.4926 8.33167 22.1561 7.31231 22.7135 6.21713C23.3588 4.99758 23.9207 3.72239 24.394 2.40308C24.585 1.92427 24.8946 1.52052 25.2842 1.24228C25.6758 1.00741 26.1205 0.915503 26.5589 0.978908L31.2095 0.937451C31.6344 0.883801 33.3893 0.769185 33.8801 2.23238C34.237 3.30538 33.9204 4.81247 31.2202 8.67529C30.8101 9.26544 30.4426 9.77268 30.1239 10.2141C29.6016 10.8532 29.1473 11.5614 28.7706 12.3235C29.1879 12.8312 29.6351 13.3055 30.109 13.7428C31.4349 14.9532 32.5925 16.3881 33.5423 17.9983C34.0343 18.7064 34.137 19.6722 33.8078 20.4954C33.3002 21.3637 32.454 21.8913 31.5431 21.9074L27.2388 21.9757C27.1501 21.9969 27.0593 22.0043 26.969 21.9976ZM21.067 14.9865C22.1739 14.9865 23.1236 16.1546 24.0414 17.2935C24.5265 17.9438 25.073 18.5302 25.6709 19.042C26.0704 19.3826 26.5563 19.5634 27.0539 19.5566L31.4581 19.4761C31.5687 19.4633 31.6778 19.4363 31.7832 19.3956L31.7492 19.3322C30.9203 17.9512 29.918 16.7185 28.7748 15.6742C25.8876 12.7966 26.0873 11.9845 28.471 8.67529C28.7833 8.23877 29.1424 7.74129 29.546 7.16333C30.4287 6.02029 31.1726 4.74556 31.7577 3.37366C31.6092 3.36139 31.46 3.36139 31.3115 3.37366L26.4123 3.41268C26.3167 3.41268 25.5413 5.60747 24.5003 7.52181C22.9408 10.3628 21.2773 12.8405 19.7201 11.7699C18.5069 10.9286 18.5516 9.14351 18.5856 7.83883V7.25844C18.5856 6.37077 18.6153 5.60259 18.6387 4.93928C18.7126 4.22064 18.694 3.49346 18.5834 2.78107C18.5158 2.74411 18.4445 2.71706 18.371 2.7006C17.7175 2.53119 17.0477 2.45986 16.3782 2.48843C15.5413 2.46351 14.7038 2.4879 13.8691 2.56159C13.8985 2.5981 13.9261 2.63635 13.9519 2.67621C14.4485 3.60701 14.6953 4.68497 14.6615 5.77574C14.874 9.15083 14.4491 11.2261 13.4166 11.8358C11.6872 12.8551 10.2 10.4579 8.59386 7.46816C7.91892 6.19267 7.31987 4.86627 6.80076 3.49804C6.70721 3.41085 6.59494 3.35446 6.4757 3.33465L2.33923 3.38098C4.1735 7.95368 6.58372 12.1919 9.49254 15.9595C11.3716 18.1489 13.9201 19.4112 16.597 19.4785H18.5601C18.5346 19.4785 18.6663 19.4297 18.7109 19.398C18.6217 18.8006 18.6748 15.7132 20.538 15.0792C20.7093 15.0181 20.8876 14.9869 21.067 14.9865Z"></path>
+</symbol></svg></div>
+    <header class="header">
+      <div class="container header__row"><a class="header__logo" href="index.html">
+          <div>
+            <svg width="15" height="25">
+              <use xlink:href="#icon-logo"></use>
+            </svg><span>Сад<br>Эко</span>
+          </div><span class="header__logo-text">Питомник Туй</span></a>
+        <nav class="nav nav--inactive js-nav-header">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Галерея</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Консультация</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Посадка за 1 день</a></li>
+          </ul>
+        </nav><a class="header__link button" href="#">Заказать звонок</a>
+        <button class="header__btn hamburger header__btn" type="button" aria-label="Кнопка открывающая мобильное меню"><span class="hamburger__bar hamburger__bar--bar1"></span><span class="hamburger__bar hamburger__bar--bar2"></span><span class="hamburger__bar hamburger__bar--bar3"></span><span class="hamburger__bar hamburger__bar--bar4"></span></button>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="container main__row">
+          <div class="main__column">
+            <h1 class="main__caption">Туи из питомника с доставкой и&nbsp;скидкой 50-70%</h1><a class="main__link button" href="#">Оставить заявку</a>
+            <ul class="main__list">
+              <li class="main__item">
+                <svg width="30" height="30">
+                  <use xlink:href="#icon-main-plus"></use>
+                </svg>Без посредников
+              </li>
+              <li class="main__item">
+                <svg width="30" height="30">
+                  <use xlink:href="#icon-main-plus"></use>
+                </svg>Посадка туи за 1 день
+              </li>
+              <li class="main__item">
+                <svg width="30" height="30">
+                  <use xlink:href="#icon-main-plus"></use>
+                </svg>Без предоплаты
+              </li>
+            </ul>
+          </div>
+          <div class="main__form main-form">
+            <form action="#" method="POST">
+              <p class="main-form__caption">Задайте вопрос специалисту</p>
+              <label><span class="visually-hidden">Введите имя</span>
+                <input class="main-form__input" type="text" name="name" placeholder="Ваше имя">
+              </label>
+              <label><span class="visually-hidden">Введите телефон</span>
+                <input class="main-form__input js-tel-input" type="text" name="tel" placeholder="Ваш телефон">
+              </label>
+              <button class="main-form__btn button" type="submit">Перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__caption h2">Посмотрите на&nbsp;<a href="#">питомник изнутри</a></h2>
+          <div class="gallery__row fancy-container">
+            <div class="gallery__img fancy-img" data-index="0">
+              <picture>
+                <source srcset="img/inside-nursery-1.webp" type="image/webp"><img src="img/inside-nursery-1.png" alt="питомник изнутри фото">
+              </picture>
+            </div>
+            <div class="gallery__img fancy-img" data-index="1">
+              <picture>
+                <source srcset="img/inside-nursery-2.webp" type="image/webp"><img src="img/inside-nursery-2.png" alt="питомник изнутри фото">
+              </picture>
+            </div>
+            <div class="gallery__img fancy-img" data-index="2">
+              <picture>
+                <source srcset="img/inside-nursery-3.webp" type="image/webp"><img src="img/inside-nursery-3.png" alt="питомник изнутри фото">
+              </picture>
+            </div>
+            <div class="gallery__img fancy-img" data-index="3">
+              <picture>
+                <source srcset="img/inside-nursery-4.webp" type="image/webp"><img src="img/inside-nursery-4.png" alt="питомник изнутри фото">
+              </picture>
+            </div>
+            <div class="gallery__img fancy-img" data-index="4">
+              <picture>
+                <source srcset="img/inside-nursery-5.webp" type="image/webp"><img src="img/inside-nursery-5.png" alt="питомник изнутри фото">
+              </picture>
+            </div>
+            <div class="gallery__img fancy-img" data-index="5">
+              <picture>
+                <source srcset="img/inside-nursery-6.webp" type="image/webp"><img src="img/inside-nursery-6.png" alt="питомник изнутри фото">
+              </picture>
+            </div>
+          </div>
+          <button class="gallery__btn hidden" type="button">Посмотреть ещё</button>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <h2 class="catalog__caption h2"><a href="#">Каталог&nbsp;</a>туй</h2>
+          <ul class="catalog__list fancy-container">
+            <li class="catalog__item">
+              <div class="catalog__img fancy-img" data-index="0">
+                <picture>
+                  <source srcset="img/catalog-1.webp" type="image/webp"><img src="img/catalog-1.png" alt="Фото каталога">
+                </picture>
+              </div>
+              <p class="catalog__item-caption">Туя Брабант</p>
+              <ul class="catalog__parameter-list">
+                <li class="catalog__parameter-item">0.3 - 6м</li>
+                <li class="catalog__parameter-item">от&nbsp;<span>400 Р</span></li>
+              </ul>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__img fancy-img" data-index="1">
+                <picture>
+                  <source srcset="img/catalog-2.webp" type="image/webp"><img src="img/catalog-2.png" alt="Фото каталога">
+                </picture>
+              </div>
+              <p class="catalog__item-caption">Туя крупномер</p>
+              <ul class="catalog__parameter-list">
+                <li class="catalog__parameter-item">2 - 9м</li>
+                <li class="catalog__parameter-item">от&nbsp;<span>14 000 Р</span></li>
+              </ul>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__img fancy-img" data-index="2">
+                <picture>
+                  <source srcset="img/catalog-3.webp" type="image/webp"><img src="img/catalog-3.png" alt="Фото каталога">
+                </picture>
+              </div>
+              <p class="catalog__item-caption">Туя Шаровидная</p>
+              <ul class="catalog__parameter-list">
+                <li class="catalog__parameter-item">0.1 - 3м</li>
+                <li class="catalog__parameter-item">от&nbsp;<span>2 200 Р</span></li>
+              </ul>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__img fancy-img" data-index="3">
+                <picture>
+                  <source srcset="img/catalog-4.webp" type="image/webp"><img src="img/catalog-4.png" alt="Фото каталога">
+                </picture>
+              </div>
+              <p class="catalog__item-caption">Туя Смарагд</p>
+              <ul class="catalog__parameter-list">
+                <li class="catalog__parameter-item">0.5 - 6м</li>
+                <li class="catalog__parameter-item">от&nbsp;<span>600 Р</span></li>
+              </ul>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__img fancy-img" data-index="4">
+                <picture>
+                  <source srcset="img/catalog-5.webp" type="image/webp"><img src="img/catalog-5.png" alt="Фото каталога">
+                </picture>
+              </div>
+              <p class="catalog__item-caption">Туя Blue Arrow</p>
+              <ul class="catalog__parameter-list">
+                <li class="catalog__parameter-item">2.2 - 5м</li>
+                <li class="catalog__parameter-item">от&nbsp;<span>3 000 Р</span></li>
+              </ul>
+            </li>
+          </ul>
+          <p class="catalog__text">Подключите консультанта для помощи в выборе</p><a class="catalog__btn button" href="#">+ Консультант</a>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/tuya-mobile.webp" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/tuya-mobile.png">
+            <source media="(max-width: 1200px)" srcset="img/tuya-tablet.webp" type="image/webp">
+            <source media="(max-width: 1200px)" srcset="img/tuya-tablet.png">
+            <source srcset="img/tuya.webp" type="image/webp"><img class="questions__img" src="img/tuya.png">
+          </picture>
+          <h2 class="questions__caption h2">Есть вопрос? Ответим&nbsp;через&nbsp;<a href="#">36</a>&nbsp;секунд</h2>
+          <form action="#" method="POST">
+            <p class="questions__text">Оставьте заявку и наш специалист проконсультирует вас</p>
+            <div class="questions__row">
+              <label><span class="visually-hidden">Введите имя</span>
+                <input class="questions__input" type="text" name="name" placeholder="Ваше имя">
+              </label>
+              <label><span class="visually-hidden">Введите телефон</span>
+                <input class="questions__input js-tel-input" type="text" name="tel" placeholder="Ваш телефон">
+              </label>
+              <button class="questions__btn button" type="submit">Заказать звонок</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <h2 class="services__caption h2">Посадим туи<a href="#">&nbsp;за 1 день</a></h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="services__img">
+                <picture>
+                  <source srcset="img/planting-1.webp" type="image/webp"><img src="img/planting-1.png">
+                </picture>
+              </div>
+              <p class="services__item-caption">Логистика</p>
+              <p class="services__item-text">Погрузим и отвезем туи самостоятельно</p>
+            </li>
+            <li class="services__item">
+              <div class="services__img">
+                <picture>
+                  <source srcset="img/planting-2.webp" type="image/webp"><img src="img/planting-2.png">
+                </picture>
+              </div>
+              <p class="services__item-caption">Посадка</p>
+              <p class="services__item-text">Подготовим грунти и посадим все деревья</p>
+            </li>
+            <li class="services__item">
+              <div class="services__img">
+                <picture>
+                  <source srcset="img/planting-3.webp" type="image/webp"><img src="img/planting-3.png">
+                </picture>
+              </div>
+              <p class="services__item-caption">Обработка</p>
+              <p class="services__item-text">От вредителей и болезней для долгой жизни туи</p>
+            </li>
+            <li class="services__item">
+              <div class="services__img">
+                <picture>
+                  <source srcset="img/planting-4.webp" type="image/webp"><img src="img/planting-4.png">
+                </picture>
+              </div>
+              <p class="services__item-caption">Гарантия 2 года</p>
+              <p class="services__item-text">Гарантия по договору</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="comment slider">
+        <div class="container">
+          <h2 class="comment__caption h2">Почитайте, что говорят&nbsp;<a href="#">наши</a>&nbsp;клиенты</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <article class="comment__item swiper-item">
+                <ul class="comment__img-list">
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-1.webp" type="image/webp"><img src="img/review-1.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-2.webp" type="image/webp"><img src="img/review-2.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-3.webp" type="image/webp"><img src="img/review-3.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-4.webp" type="image/webp"><img src="img/review-4.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-5.webp" type="image/webp"><img src="img/review-5.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                </ul>
+                <div class="comment__column">
+                  <p>
+                    Очень довольна данной компанией, не пожалела,
+                    что обратилась! Теперь мой сад выглядит потрясающе!
+                    Я очень люблю туи и предстоял сложный выбор питомника.
+                    Сотрудники данной комании всё посадили, обработали в
+                    кратчайшее время.
+                  </p>
+                  <cite>Татьяна Иванова</cite>
+                  <time datetime="2019-06-30">30 июня</time>
+                </div>
+              </article>
+              <article class="comment__item swiper-item">
+                <ul class="comment__img-list">
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-1.webp" type="image/webp"><img src="img/review-1.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-2.webp" type="image/webp"><img src="img/review-2.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-3.webp" type="image/webp"><img src="img/review-3.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-4.webp" type="image/webp"><img src="img/review-4.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                  <li class="comment__img-item">
+                    <picture>
+                      <source srcset="img/review-5.webp" type="image/webp"><img src="img/review-5.png" alt="Фото к коментарию">
+                    </picture>
+                  </li>
+                </ul>
+                <div class="comment__column">
+                  <p>
+                    Очень довольна данной компанией, не пожалела,
+                    что обратилась! Теперь мой сад выглядит потрясающе!
+                    Я очень люблю туи и предстоял сложный выбор питомника.
+                    Сотрудники данной комании всё посадили, обработали в
+                    кратчайшее время.
+                  </p>
+                  <cite>Татьяна Иванова</cite>
+                  <time datetime="2019-06-30">30 июня</time>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="comment__button-row">
+            <button class="js-btn-next" type="button">НАлево</button>
+            <button class="js-btn-prev" type="button">Направо</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__row">
+        <div class="footer__column"><a class="footer__logo" href="index.html">
+            <div>
+              <svg width="15" height="25">
+                <use xlink:href="#icon-logo"></use>
+              </svg><span>Сад<br>Эко</span>
+            </div><span class="footer__logo-text">Питомник Туй</span></a>
+          <p class="footer__copy">Соглашение на обработку персональных данных</p>
+        </div>
+        <div class="footer__column">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__item-link" href="#">Главная</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Каталог</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Консультация</a></li>
+            <li class="footer__item"><a class="footer__item-link" href="#">Посадка за 1 день</a></li>
+            <li class="footer__item">
+              <ul class="footer__social-list">
+                <li><a href="#"><span class="visually-hidden">Facebook</span>
+                    <svg width="19" height="30">
+                      <use xlink:href="#icon-fb"></use>
+                    </svg></a></li>
+                <li><a href="#"><span class="visually-hidden">Instagramm</span>
+                    <svg width="24" height="24">
+                      <use xlink:href="#icon-insta"></use>
+                    </svg></a></li>
+                <li><a href="#"><span class="visually-hidden">Вконтакте</span>
+                    <svg width="34" height="22">
+                      <use xlink:href="#icon-vk"></use>
+                    </svg></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column"><a class="footer__link button" href="#">Заказать звонок</a><a class="footer__tel-link" href="tel:88007000101">8 (800) 700-01-01</a></div>
+      </div>
+    </footer>
+    <div class="gallery-popup visually-hidden">
+      <div class="slider-gallery">
+        <div class="gallery-popup__container swiper-container">
+          <div class="gallery-popup__list swiper-wrapper"></div>
+        </div>
+        <button class="gallery-popup__btn js-btn-prev" type="button">
+          <svg width="21" height="36">
+            <use xlink:href="#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="gallery-popup__btn js-btn-next" type="button">
+          <svg width="21" height="36">
+            <use xlink:href="#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button class="gallery-popup__btn-close js-btn-next" type="button">
+          <svg width="35" height="35">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+        </button>
+        <template id="gallery-template">
+          <div class="gallery-popup__item swiper-slide">
+            <picture>
+              <source srcset="" type="image/webp"><img src="" alt="питомник изнутри фото">
+            </picture>
+          </div>
+        </template>
+      </div>
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
